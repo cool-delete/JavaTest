@@ -14,7 +14,7 @@ import java.util.Scanner;
 public class ccc {
     public static void main(String args[]) throws IOException {
 
-//        Scanner s = new Scanner(System.in);
+//        Scanner s = new Scanner(System.in);速度太慢
         StreamTokenizer s = new StreamTokenizer(new BufferedReader(new InputStreamReader(System.in)));
         PrintWriter out = new PrintWriter(new OutputStreamWriter(System.out));
         int N = 0;
@@ -57,7 +57,7 @@ public class ccc {
                     } else if (sum < 0) {
                         sum = 0;
                         if (first != 0)
-                            cach = 0;
+                            cach = 0;//已经产生开始记录 准备缓存下标
 
                     } else if (sum >= 0) {
                         if (first != 0 && cach >= 0) {
